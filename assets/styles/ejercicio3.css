@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000ff;
+}
+
+.title {
+  width: 35rem;
+  display: flex;
+  background-color: #a5c1ee;
+  padding: 0.5rem 2rem;
+}
+.title > i {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+.mainWindow {
+  width: 35rem;
+  height: 25rem;
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 1rem 1rem;
+}
+
+.mainWindow > button {
+  width: 20rem;
+  height: 5rem;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid #000000;
+}
+.mainWindow > button:hover {
+  background-color: #a5c1ee;
+  border: 2px solid #000000;
+}
+
+.mainWindow > span {
+  padding-top: 1cqh;
+  font-size: 1.3rem;
+}
+
+.selectContainer {
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.selectContainer > select {
+  width: 6rem;
+  height: 6rem;
+  font-size: 3.5rem;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid #000000;
+}
+
+.containerError {
+  width: 40rem;
+  background-color: aqua;
+  position: absolute;
+  z-index: 2;
+  display: none;
+  box-shadow: 1rem 1rem;
+}
+.titleError {
+  width: 40rem;
+  height: 4rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #a5c1ee;
+}
+.titleError > i {
+  color: red;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.containerError > img {
+  width: 100%;
+}
+
